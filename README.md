@@ -10,7 +10,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [solution]()
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/product-preview-card-sassscss-bem-flexbox-lplRCEdbXF)
 - Live Site URL: [live](https://kucharzooo.github.io/product-preview-card-component/)
 
 ### Built with
