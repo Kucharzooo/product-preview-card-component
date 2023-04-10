@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --btn-color: hsl(158, 36%, 37%);
+  --pure-white: hsl(0, 0%, 100%);
+  --dark-blue: hsl(228, 12%, 48%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+}
+
+html {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.card {
+  margin: 20px;
+  height: 90vh;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: hidden;
+}
+.card__img {
+  background-image: url(../images/image-product-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40%;
+}
+.card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 20px;
+  height: 60%;
+}
+.card__category {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--dark-blue);
+}
+.card__product-name {
+  font-size: 32px;
+  font-family: "Fraunces", serif;
+  line-height: 1;
+  color: var(--very-dark-blue);
+}
+.card__description {
+  line-height: 1.8;
+  color: var(--dark-blue);
+}
+.card__price {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  font-size: 32px;
+  font-family: "Fraunces", serif;
+  color: var(--btn-color);
+}
+.card__price-discount {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: var(--dark-blue);
+  text-decoration: line-through;
+}
+.card__btn {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--btn-color);
+  color: var(--pure-white);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.card__btn img {
+  margin-right: 10px;
+}
+.card__btn:hover, .card__btn:active {
+  background-color: hsl(158, 36%, 29%);
+}
+
+@media (min-width: 768px) {
+  .card {
+    display: flex;
+    height: 500px;
+    width: 650px;
+  }
+  .card__img {
+    background-image: url(../images/image-product-desktop.jpg);
+    height: 100%;
+    width: 100%;
+  }
+  .card__text {
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+  }
+  .card__category {
+    font-size: 14px;
+  }
+  .card__product-name {
+    font-size: 34px;
+    width: 80%;
+  }
+  .card__description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .card__price {
+    font-size: 34px;
+  }
+}/*# sourceMappingURL=style.css.map */

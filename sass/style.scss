@@ -1,0 +1,125 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--btn-color: hsl(158, 36%, 37%);
+	--pure-white: hsl(0, 0%, 100%);
+	--dark-blue: hsl(228, 12%, 48%);
+	--very-dark-blue: hsl(212, 21%, 14%);
+}
+html {
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: hsl(30, 38%, 92%);
+}
+.card {
+	margin: 20px;
+	height: 90vh;
+	border-radius: 10px;
+	background-color: #fff;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	overflow: hidden;
+
+	&__img {
+		background-image: url(../images/image-product-mobile.jpg);
+		background-size: cover;
+		background-position: center;
+		height: 40%;
+	}
+	&__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 25px 20px;
+		height: 60%;
+	}
+	&__category {
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		color: var(--dark-blue);
+	}
+	&__product-name {
+		font-size: 32px;
+		font-family: 'Fraunces', serif;
+		line-height: 1;
+		color: var(--very-dark-blue);
+	}
+	&__description {
+		line-height: 1.8;
+		color: var(--dark-blue);
+	}
+	&__price {
+		display: flex;
+		align-items: center;
+		column-gap: 20px;
+		font-size: 32px;
+		font-family: 'Fraunces', serif;
+		color: var(--btn-color);
+		&-discount {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 13px;
+			color: var(--dark-blue);
+			text-decoration: line-through;
+		}
+	}
+	&__btn {
+		padding: 15px 20px;
+		border: none;
+		border-radius: 10px;
+		background-color: var(--btn-color);
+		color: var(--pure-white);
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		cursor: pointer;
+		transition: background-color 0.3s;
+		img {
+			margin-right: 10px;
+		}
+		&:hover,
+		&:active {
+			background-color: hsl(158, 36%, 29%);
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.card {
+		display: flex;
+		height: 500px;
+		width: 650px;
+		&__img {
+			background-image: url(../images/image-product-desktop.jpg);
+			height: 100%;
+			width: 100%;
+		}
+		&__text {
+			height: 100%;
+			width: 100%;
+			padding: 40px;
+		}
+		&__category {
+			font-size: 14px;
+		}
+		&__product-name {
+			font-size: 34px;
+			width: 80%;
+		}
+		&__description {
+			font-size: 16px;
+			line-height: 1.6;
+		}
+		&__price {
+			font-size: 34px;
+		}
+	}
+}
