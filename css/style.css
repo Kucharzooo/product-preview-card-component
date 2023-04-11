@@ -27,7 +27,7 @@ body {
 
 .card {
   margin: 20px;
-  height: 90vh;
+  height: 700px;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -42,7 +42,7 @@ body {
 .card__text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  row-gap: 20px;
   padding: 25px 20px;
   height: 60%;
 }
